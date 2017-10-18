@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boomerang", "Boomerang\Boom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boomerang.Tests", "Boomerang.Tests\Boomerang.Tests.csproj", "{CD41DF80-7DF0-4C7F-B21A-6762D082D2E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{0DB5FC0E-ADEB-4A3C-93D6-A891CCAF1341}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CD41DF80-7DF0-4C7F-B21A-6762D082D2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD41DF80-7DF0-4C7F-B21A-6762D082D2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD41DF80-7DF0-4C7F-B21A-6762D082D2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB5FC0E-ADEB-4A3C-93D6-A891CCAF1341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB5FC0E-ADEB-4A3C-93D6-A891CCAF1341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB5FC0E-ADEB-4A3C-93D6-A891CCAF1341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB5FC0E-ADEB-4A3C-93D6-A891CCAF1341}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
