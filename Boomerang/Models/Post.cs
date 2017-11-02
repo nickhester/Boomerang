@@ -5,6 +5,7 @@ using System.Web;
 
 namespace Boomerang.Models
 {
+    [EntityFramework.HidePosts]
     public class Post
     {
         public Post()

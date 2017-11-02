@@ -210,6 +210,11 @@
     <Compile Include="Contexts\PostsContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
+    <Compile Include="EntityFramework\HidePostsAttribute.cs" />
+    <Compile Include="EntityFramework\HidePostsDbCommandInterceptor.cs" />
+    <Compile Include="EntityFramework\HidePostsDbCommandTreeInterceptor.cs" />
+    <Compile Include="EntityFramework\HidePostsExpressionVisitor.cs" />
+    <Compile Include="EntityFramework\MyDbConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
