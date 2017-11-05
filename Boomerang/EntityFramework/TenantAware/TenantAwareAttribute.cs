@@ -9,7 +9,7 @@ namespace Boomerang.EntityFramework
     public class TenantAwareAttribute : Attribute
     {
         public const string TenantAwareAnnotation = "TenantAwareAnnotation";
-        public const string TenantAwareParameterName = "DomainId";
+        //public const string TenantAwareParameterName = "DomainId";
 
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string ColumnName { get; private set; }

@@ -32,15 +32,17 @@ namespace Boomerang.Contexts
                 .WithMany(p => p.RelatedPosts)
                 .HasForeignKey(p => p.RelatedPostId);
 
-            var conv = new AttributeToTableAnnotationConvention<EntityFramework.SoftDeleteAttribute, string>(
-                SoftDeleteAttribute.SoftDeleteAnnotation,
-                (type, attributes) => attributes.Single().ColumnName);
-            modelBuilder.Conventions.Add(conv);
+            //var conv = new AttributeToTableAnnotationConvention<EntityFramework.SoftDeleteAttribute, string>(
+            //    SoftDeleteAttribute.SoftDeleteAnnotation,
+            //    (type, attributes) => attributes.Single().ColumnName);
+            //modelBuilder.Conventions.Add(conv);
 
-            var conv2 = new AttributeToTableAnnotationConvention<EntityFramework.TenantAwareAttribute, string>(
-                TenantAwareAttribute.TenantAwareAnnotation,
-                (type, attributes) => attributes.Single().ColumnName);
-            modelBuilder.Conventions.Add(conv2);
+            //var conv2 = new AttributeToTableAnnotationConvention<EntityFramework.TenantAwareAttribute, string>(
+            //    TenantAwareAttribute.TenantAwareAnnotation,
+            //    (type, attributes) => attributes.Single().ColumnName);
+            //modelBuilder.Conventions.Add(conv2);
+
+            AnnotationConventionRegister.RegisterAnnotationConventions(ref modelBuilder);
         }
     }
 }

@@ -211,6 +211,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\FeelingsController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
+    <Compile Include="EntityFramework\AnnotationConventionRegister.cs" />
     <Compile Include="EntityFramework\TenantAware\TenantAwareExpressionVisitor.cs" />
     <Compile Include="EntityFramework\TenantAware\TenantAwareDbCommandTreeInterceptor.cs" />
     <Compile Include="EntityFramework\TenantAware\TenantAwareAttribute.cs" />

@@ -9,7 +9,7 @@ namespace Boomerang.EntityFramework
     public class SoftDeleteAttribute : Attribute
     {
         public const string SoftDeleteAnnotation = "SoftDeleteAnnotation";
-        public const string SoftDeleteParameterName = "IsDeleted";
+        //public const string SoftDeleteParameterName = "IsDeleted";
 
         // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public string ColumnName { get; private set; }
