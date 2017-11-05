@@ -10,47 +10,44 @@
     using Contexts;
     using System.Web.OData;
 
-    public class PostsController : ODataController
+    public class FeelingsController : ODataController
     {
-        // GET api/posts
+        // GET api/feelings
         [EnableQuery]//(PageSize = 5)]
-        public IQueryable<Post> Get()
+        public IQueryable<Feeling> Get()
         {
             Context context = new Context();
-            
+
             context.Database.Log = (o => System.Diagnostics.Debug.Write(o));
 
-            return context.PostDbSet;
+            return context.FeelingDbSet;
         }
 
-        // GET api/posts/5
+        // GET api/feelings/5
         [EnableQuery]
-        public IQueryable<Post> Get([FromODataUri] int id)
+        public IQueryable<Feeling> Get([FromODataUri] int id)
         {
             Context context = new Context();
 
             context.Database.Log = (o => System.Diagnostics.Debug.Write(o));
 
-            return context.PostDbSet.Where(x => x.Id == id);
+            return context.FeelingDbSet.Where(x => x.Id == id);
         }
 
-        // POST api/posts
-        public void Post([FromBody]Post value)
+        // POST api/feelings
+        public void Post([FromBody]Feeling value)
         {
-            // fix up data
-            value.Time = DateTime.UtcNow;
-
             var context = new Context();
-            context.PostDbSet.Add(value);
+            context.FeelingDbSet.Add(value);
             context.SaveChanges();
         }
 
-        //// PUT api/posts/5
+        //// PUT api/feelings/5
         //public void Put(int id, [FromBody]string value)
         //{
         //}
 
-        //// DELETE api/posts/5
+        //// DELETE api/feelings/5
         //public void Delete(int id)
         //{
         //}

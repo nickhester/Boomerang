@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Boomerang.EntityFramework;
 
 namespace Boomerang.Models
 {
-    [EntityFramework.HidePosts]
+    [SoftDelete("IsDeleted")]
+    [TenantAware("DomainId")]
     public class Post
     {
         public Post()
@@ -15,12 +17,13 @@ namespace Boomerang.Models
 
         public int Id { get; set; }
         public string Text { get; set; }
-        [Newtonsoft.Json.JsonIgnore]
         public DateTime Time { get; set; }
         public int? CurrentMoodId { get; set; }
         public virtual Feeling CurrentMood { get; set; }
         public int? RelatedPostId { get; set; }
         public virtual Post RelatedPost { get; set; }
         public virtual ICollection<Post> RelatedPosts { get; set; }
+        public int DomainId { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

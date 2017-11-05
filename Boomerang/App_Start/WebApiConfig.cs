@@ -29,6 +29,7 @@ namespace Boomerang
 
             ODataModelBuilder builder = new ODataConventionModelBuilder();
             builder.EntitySet<Models.Post>("Posts");
+            builder.EntitySet<Models.Feeling>("Feelings");
             config.MapODataServiceRoute(
                 routeName: "ODataRoute", 
                 routePrefix: "api", 

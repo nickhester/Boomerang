@@ -207,13 +207,17 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Contexts\PostsContext.cs" />
+    <Compile Include="Contexts\Context.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\FeelingsController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
-    <Compile Include="EntityFramework\HidePostsAttribute.cs" />
-    <Compile Include="EntityFramework\HidePostsDbCommandInterceptor.cs" />
-    <Compile Include="EntityFramework\HidePostsDbCommandTreeInterceptor.cs" />
-    <Compile Include="EntityFramework\HidePostsExpressionVisitor.cs" />
+    <Compile Include="EntityFramework\TenantAware\TenantAwareExpressionVisitor.cs" />
+    <Compile Include="EntityFramework\TenantAware\TenantAwareDbCommandTreeInterceptor.cs" />
+    <Compile Include="EntityFramework\TenantAware\TenantAwareAttribute.cs" />
+    <Compile Include="EntityFramework\SoftDelete\SoftDeleteAttribute.cs" />
+    <Compile Include="EntityFramework\SoftDelete\SoftDeleteDbCommandInterceptor.cs" />
+    <Compile Include="EntityFramework\SoftDelete\SoftDeleteDbCommandTreeInterceptor.cs" />
+    <Compile Include="EntityFramework\SoftDelete\SoftDeleteExpressionVisitor.cs" />
     <Compile Include="EntityFramework\MyDbConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -221,6 +225,30 @@
     <Compile Include="Migrations\201710130504496_AddRelatedPost.cs" />
     <Compile Include="Migrations\201710130504496_AddRelatedPost.Designer.cs">
       <DependentUpon>201710130504496_AddRelatedPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711040518226_next.cs" />
+    <Compile Include="Migrations\201711040518226_next.Designer.cs">
+      <DependentUpon>201711040518226_next.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711050023480_add-is-deleted-and-domain.cs" />
+    <Compile Include="Migrations\201711050023480_add-is-deleted-and-domain.Designer.cs">
+      <DependentUpon>201711050023480_add-is-deleted-and-domain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711050050231_update1.cs" />
+    <Compile Include="Migrations\201711050050231_update1.Designer.cs">
+      <DependentUpon>201711050050231_update1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711050154450_update2.cs" />
+    <Compile Include="Migrations\201711050154450_update2.Designer.cs">
+      <DependentUpon>201711050154450_update2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711050205306_update3.cs" />
+    <Compile Include="Migrations\201711050205306_update3.Designer.cs">
+      <DependentUpon>201711050205306_update3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711050235325_update4.cs" />
+    <Compile Include="Migrations\201711050235325_update4.Designer.cs">
+      <DependentUpon>201711050235325_update4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Feeling.cs" />
@@ -299,6 +327,24 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201710130504496_AddRelatedPost.resx">
       <DependentUpon>201710130504496_AddRelatedPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711040518226_next.resx">
+      <DependentUpon>201711040518226_next.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711050023480_add-is-deleted-and-domain.resx">
+      <DependentUpon>201711050023480_add-is-deleted-and-domain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711050050231_update1.resx">
+      <DependentUpon>201711050050231_update1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711050154450_update2.resx">
+      <DependentUpon>201711050154450_update2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711050205306_update3.resx">
+      <DependentUpon>201711050205306_update3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711050235325_update4.resx">
+      <DependentUpon>201711050235325_update4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

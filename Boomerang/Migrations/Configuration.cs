@@ -5,7 +5,7 @@ namespace Boomerang.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Boomerang.Contexts.PostsContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Boomerang.Contexts.Context>
     {
         public Configuration()
         {
@@ -13,7 +13,7 @@ namespace Boomerang.Migrations
             ContextKey = "Boomerang.Contexts.PostContext";
         }
 
-        protected override void Seed(Boomerang.Contexts.PostsContext context)
+        protected override void Seed(Boomerang.Contexts.Context context)
         {
             //  This method will be called after migrating to the latest version.
 

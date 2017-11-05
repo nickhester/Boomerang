@@ -10,8 +10,9 @@ namespace Boomerang.EntityFramework
     {
         public MyDbConfiguration()
         {
-            AddInterceptor(new HidePostsDbCommandInterceptor());
-            AddInterceptor(new HidePostsDbCommandTreeInterceptor());
+            AddInterceptor(new SoftDeleteDbCommandTreeInterceptor());
+            AddInterceptor(new TenantAwareDbCommandTreeInterceptor());
+
         }
     }
 }
