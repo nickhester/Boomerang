@@ -12,7 +12,7 @@ namespace Boomerang.EntityFramework
         {
             AddInterceptor(new SoftDeleteDbCommandTreeInterceptor());
             AddInterceptor(new TenantAwareDbCommandTreeInterceptor());
-
+            AddInterceptor(new AddExpandDbCommandInterceptor());
         }
     }
 }

@@ -216,13 +216,14 @@
     <Compile Include="EntityFramework\TenantAware\TenantAwareDbCommandTreeInterceptor.cs" />
     <Compile Include="EntityFramework\TenantAware\TenantAwareAttribute.cs" />
     <Compile Include="EntityFramework\SoftDelete\SoftDeleteAttribute.cs" />
-    <Compile Include="EntityFramework\SoftDelete\SoftDeleteDbCommandInterceptor.cs" />
+    <Compile Include="EntityFramework\AddExpand\AddExpandDbCommandInterceptor.cs" />
     <Compile Include="EntityFramework\SoftDelete\SoftDeleteDbCommandTreeInterceptor.cs" />
     <Compile Include="EntityFramework\SoftDelete\SoftDeleteExpressionVisitor.cs" />
     <Compile Include="EntityFramework\MyDbConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InMemoryMessage.cs" />
     <Compile Include="Migrations\201710130504496_AddRelatedPost.cs" />
     <Compile Include="Migrations\201710130504496_AddRelatedPost.Designer.cs">
       <DependentUpon>201710130504496_AddRelatedPost.cs</DependentUpon>
@@ -254,6 +255,10 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Feeling.cs" />
     <Compile Include="Models\Post.cs" />
+    <Compile Include="OData\CustomODataEdmTypeSerializer.cs" />
+    <Compile Include="OData\CustomODataResourceSerializer.cs" />
+    <Compile Include="OData\CustomODataPayloadSerializer.cs" />
+    <Compile Include="OData\CustomODataSerializerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
