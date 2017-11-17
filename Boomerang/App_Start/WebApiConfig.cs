@@ -44,6 +44,7 @@ namespace Boomerang
 
             // Build model here
             oDataConventionModelBuilder.EntitySet<Post>("Posts");
+            oDataConventionModelBuilder.ComplexType<DynamicProperty>();
             oDataConventionModelBuilder.EntitySet<Feeling>("Feelings");
             
             return oDataConventionModelBuilder.GetEdmModel();
